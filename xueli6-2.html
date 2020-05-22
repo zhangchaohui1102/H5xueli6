@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{ 
+			background-image:url('images/bg3.JPG'); 
+		}
+		ul.picture li{ 
+			display:inline; 
+		}
+		ul.picture a{
+			background:#fff;
+			display:inline;
+			float:left;
+			width:auto;
+			margin:50px 0 30px 30px;
+			padding:10px 10px 15px;
+			text-align:center;
+			text-decoration:none;
+			font-size:18px;
+			-webkit-box-shadow:0 3px 6px rgba(0,0,0,.50);
+			-webkit-transform:rotate(-2deg);
+			-webkit-transition: -webkit-transform .15s linear;
+		}
+		ul.picture img{
+			display:block;
+			height:100px;
+			margin-bottom:12px;
+		}
+		ul.picture a:after{ 
+			content:attr(title);
+			 }
+		ul.picture li:nth-child(even) a{
+			-webkit-transform: rotate(5deg);
+		}
+		ul.picture li:nth-child(2n) a{
+			position:relative;
+			top:-5px;
+			-webkit-transform:rotate(-10deg);
+		}
+		ul.picture li:nth-child(4n) a{
+			position:relative;
+			right:5px;
+			top:8px;
+		}
+		ul.picture li:nth-child(5n) a{
+			position:relative;
+			left:-5px;
+			top:3px;
+		}
+		ul.picture li a:hover{
+			-webkit-transform:scale(1.5);
+			-webkit-box-shadow:0 3px 6px rgba(0,0,0,.5);
+			position:relative;
+			z-index:5;
+		}
+	</style>
+</head>
+<body>
+	<ul class="picture">
+		<li><a href="1" title="相识" style="color:black; font-family:'STSong'; "><img src="images/11.jpg" alt=""></a></li>
+		<li><a href="2" title="凝视" style="color:black; font-family:'STSong';"><img src="images/22.JPG" alt=""></a></li>
+		<li><a href="3" title="甜睡" style="color:black; font-family:'STSong';"><img src="images/33.JPG" alt=""></a></li>
+		<li><a href="4" title="逗乐" style="color:black; font-family:'STSong';"><img src="images/44.JPG" alt=""></a></li>
+		<li><a href="5" title="奔跑" style="color:black; font-family:'STSong';"><img src="images/55.JPG" alt=""></a></li>
+		<li><a href="6" title="漠视" style="color:black; font-family:'STSong';"><img src="images/66.JPG" alt=""></a></li>
+	</ul>
+</body>
+</html>
+　　
